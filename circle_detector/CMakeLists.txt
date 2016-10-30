@@ -11,7 +11,7 @@ FIND_PACKAGE(OpenCV REQUIRED)
 INCLUDE_DIRECTORIES(${OpenCV_INCLUDE_DIR})
 
 #Create an executable
-ADD_EXECUTABLE(${PROJECT_NAME} src/circle_detector.cpp)
+ADD_EXECUTABLE(circle_detector src/circle_detector.cpp)
 
 #Link with libraries
-TARGET_LINK_LIBRARIES(${PROJECT_NAME} ${OpenCV_LIBS})
+TARGET_LINK_LIBRARIES(circle_detector ${OpenCV_LIBS})
