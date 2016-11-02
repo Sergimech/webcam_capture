@@ -1,0 +1,3 @@
+/home/sergi/webcam_capture/CMakeFiles/rebuild_cache.dir
+/home/sergi/webcam_capture/CMakeFiles/edit_cache.dir
+/home/sergi/webcam_capture/CMakeFiles/webcam_capture.dir

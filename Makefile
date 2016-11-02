@@ -48,24 +48,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sergi/webcam_capture/circle_detector
+CMAKE_SOURCE_DIR = /home/sergi/webcam_capture
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sergi/webcam_capture/circle_detector
+CMAKE_BINARY_DIR = /home/sergi/webcam_capture
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -78,11 +67,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sergi/webcam_capture/circle_detector/CMakeFiles /home/sergi/webcam_capture/circle_detector/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sergi/webcam_capture/CMakeFiles /home/sergi/webcam_capture/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sergi/webcam_capture/circle_detector/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sergi/webcam_capture/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named circle_detector
+# Target rules for targets named webcam_capture
 
 # Build rule for target.
-circle_detector: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 circle_detector
-.PHONY : circle_detector
+webcam_capture: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 webcam_capture
+.PHONY : webcam_capture
 
 # fast build rule for target.
-circle_detector/fast:
-	$(MAKE) -f CMakeFiles/circle_detector.dir/build.make CMakeFiles/circle_detector.dir/build
-.PHONY : circle_detector/fast
+webcam_capture/fast:
+	$(MAKE) -f CMakeFiles/webcam_capture.dir/build.make CMakeFiles/webcam_capture.dir/build
+.PHONY : webcam_capture/fast
 
-src/circle_detector.o: src/circle_detector.cpp.o
+src/webcam_capture.o: src/webcam_capture.cpp.o
 
-.PHONY : src/circle_detector.o
+.PHONY : src/webcam_capture.o
 
 # target to build an object file
-src/circle_detector.cpp.o:
-	$(MAKE) -f CMakeFiles/circle_detector.dir/build.make CMakeFiles/circle_detector.dir/src/circle_detector.cpp.o
-.PHONY : src/circle_detector.cpp.o
+src/webcam_capture.cpp.o:
+	$(MAKE) -f CMakeFiles/webcam_capture.dir/build.make CMakeFiles/webcam_capture.dir/src/webcam_capture.cpp.o
+.PHONY : src/webcam_capture.cpp.o
 
-src/circle_detector.i: src/circle_detector.cpp.i
+src/webcam_capture.i: src/webcam_capture.cpp.i
 
-.PHONY : src/circle_detector.i
+.PHONY : src/webcam_capture.i
 
 # target to preprocess a source file
-src/circle_detector.cpp.i:
-	$(MAKE) -f CMakeFiles/circle_detector.dir/build.make CMakeFiles/circle_detector.dir/src/circle_detector.cpp.i
-.PHONY : src/circle_detector.cpp.i
+src/webcam_capture.cpp.i:
+	$(MAKE) -f CMakeFiles/webcam_capture.dir/build.make CMakeFiles/webcam_capture.dir/src/webcam_capture.cpp.i
+.PHONY : src/webcam_capture.cpp.i
 
-src/circle_detector.s: src/circle_detector.cpp.s
+src/webcam_capture.s: src/webcam_capture.cpp.s
 
-.PHONY : src/circle_detector.s
+.PHONY : src/webcam_capture.s
 
 # target to generate assembly for a file
-src/circle_detector.cpp.s:
-	$(MAKE) -f CMakeFiles/circle_detector.dir/build.make CMakeFiles/circle_detector.dir/src/circle_detector.cpp.s
-.PHONY : src/circle_detector.cpp.s
+src/webcam_capture.cpp.s:
+	$(MAKE) -f CMakeFiles/webcam_capture.dir/build.make CMakeFiles/webcam_capture.dir/src/webcam_capture.cpp.s
+.PHONY : src/webcam_capture.cpp.s
 
 # Help Target
 help:
@@ -156,12 +156,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... circle_detector"
-	@echo "... src/circle_detector.o"
-	@echo "... src/circle_detector.i"
-	@echo "... src/circle_detector.s"
+	@echo "... edit_cache"
+	@echo "... webcam_capture"
+	@echo "... src/webcam_capture.o"
+	@echo "... src/webcam_capture.i"
+	@echo "... src/webcam_capture.s"
 .PHONY : help
 
 

@@ -11,10 +11,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.5.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.5.1/CMakeSystem.cmake"
   "CMakeLists.txt"
-  "/usr/share/OpenCV/OpenCVConfig-version.cmake"
-  "/usr/share/OpenCV/OpenCVConfig.cmake"
-  "/usr/share/OpenCV/OpenCVModules-release.cmake"
-  "/usr/share/OpenCV/OpenCVModules.cmake"
+  "/opt/ros/kinetic/share/OpenCV-3.1.0-dev/OpenCVConfig-version.cmake"
+  "/opt/ros/kinetic/share/OpenCV-3.1.0-dev/OpenCVConfig.cmake"
+  "/opt/ros/kinetic/share/OpenCV-3.1.0-dev/OpenCVModules-none.cmake"
+  "/opt/ros/kinetic/share/OpenCV-3.1.0-dev/OpenCVModules.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeCommonLanguageInclude.cmake"
@@ -45,5 +45,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/circle_detector.dir/DependInfo.cmake"
+  "CMakeFiles/webcam_capture.dir/DependInfo.cmake"
   )

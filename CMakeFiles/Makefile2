@@ -54,45 +54,45 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sergi/webcam_capture/circle_detector
+CMAKE_SOURCE_DIR = /home/sergi/webcam_capture
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sergi/webcam_capture/circle_detector
+CMAKE_BINARY_DIR = /home/sergi/webcam_capture
 
 #=============================================================================
-# Target rules for target CMakeFiles/circle_detector.dir
+# Target rules for target CMakeFiles/webcam_capture.dir
 
 # All Build rule for target.
-CMakeFiles/circle_detector.dir/all:
-	$(MAKE) -f CMakeFiles/circle_detector.dir/build.make CMakeFiles/circle_detector.dir/depend
-	$(MAKE) -f CMakeFiles/circle_detector.dir/build.make CMakeFiles/circle_detector.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sergi/webcam_capture/circle_detector/CMakeFiles --progress-num=1,2 "Built target circle_detector"
-.PHONY : CMakeFiles/circle_detector.dir/all
+CMakeFiles/webcam_capture.dir/all:
+	$(MAKE) -f CMakeFiles/webcam_capture.dir/build.make CMakeFiles/webcam_capture.dir/depend
+	$(MAKE) -f CMakeFiles/webcam_capture.dir/build.make CMakeFiles/webcam_capture.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sergi/webcam_capture/CMakeFiles --progress-num=1,2 "Built target webcam_capture"
+.PHONY : CMakeFiles/webcam_capture.dir/all
 
 # Include target in all.
-all: CMakeFiles/circle_detector.dir/all
+all: CMakeFiles/webcam_capture.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/circle_detector.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sergi/webcam_capture/circle_detector/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/circle_detector.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sergi/webcam_capture/circle_detector/CMakeFiles 0
-.PHONY : CMakeFiles/circle_detector.dir/rule
+CMakeFiles/webcam_capture.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sergi/webcam_capture/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/webcam_capture.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sergi/webcam_capture/CMakeFiles 0
+.PHONY : CMakeFiles/webcam_capture.dir/rule
 
 # Convenience name for target.
-circle_detector: CMakeFiles/circle_detector.dir/rule
+webcam_capture: CMakeFiles/webcam_capture.dir/rule
 
-.PHONY : circle_detector
-
-# clean rule for target.
-CMakeFiles/circle_detector.dir/clean:
-	$(MAKE) -f CMakeFiles/circle_detector.dir/build.make CMakeFiles/circle_detector.dir/clean
-.PHONY : CMakeFiles/circle_detector.dir/clean
+.PHONY : webcam_capture
 
 # clean rule for target.
-clean: CMakeFiles/circle_detector.dir/clean
+CMakeFiles/webcam_capture.dir/clean:
+	$(MAKE) -f CMakeFiles/webcam_capture.dir/build.make CMakeFiles/webcam_capture.dir/clean
+.PHONY : CMakeFiles/webcam_capture.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/webcam_capture.dir/clean
 
 .PHONY : clean
 

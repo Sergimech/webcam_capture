@@ -1,3 +1,0 @@
-/home/sergi/webcam_capture/circle_detector/CMakeFiles/edit_cache.dir
-/home/sergi/webcam_capture/circle_detector/CMakeFiles/rebuild_cache.dir
-/home/sergi/webcam_capture/circle_detector/CMakeFiles/circle_detector.dir

@@ -4,13 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/sergi/webcam_capture/circle_detector/src/circle_detector.cpp" "/home/sergi/webcam_capture/circle_detector/CMakeFiles/circle_detector.dir/src/circle_detector.cpp.o"
+  "/home/sergi/webcam_capture/src/webcam_capture.cpp" "/home/sergi/webcam_capture/CMakeFiles/webcam_capture.dir/src/webcam_capture.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/include/opencv"
+  "/opt/ros/kinetic/include/opencv-3.1.0-dev/opencv"
+  "/opt/ros/kinetic/include/opencv-3.1.0-dev"
   )
 
 # Targets to which this target links.
